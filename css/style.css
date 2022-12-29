@@ -1,0 +1,334 @@
+/*
+  GLOBAL
+*/
+
+html {
+    font-size: 62.5%
+}
+
+body {
+    background-color:black;
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 1.6rem;
+    color:#fff;
+    margin: 0;
+}
+
+.form_header{
+    font-size: 2rem;
+}
+
+.form_header .form_header_title {
+    font-size: 1.8rem;
+}
+
+.form_body {
+    display: flex;
+    justify-content: center;
+}
+
+.form_body_input {
+    height: 45px;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    border-color: #ccc;
+    width: 300px;
+    padding-left: 10px;
+    
+}
+
+.form_body_button {
+    height: 100%;
+    background-color: #E50914;
+    color:#fff;
+    border: none;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    width: 200px;
+    font-size: 2.2rem;
+    
+}
+
+/*
+  HEADER
+*/
+
+#overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(4,4,4,1) 0%, rgba(4,4,4,0.5553571770505077) 35%, rgba(4,4,4,0.5525560566023284) 100%);
+    z-index : 0;   
+}
+
+header {
+    position: relative;
+    background-image: url('../images/netflix-bkg-image.jpeg');
+    padding-bottom: 120px;
+    background-size: cover;
+}
+
+#header_content {
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-left: 80px;
+    padding-bottom: 100px;
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+#header_content h1 {
+    font-size: 4.7rem;
+    margin-bottom: 15px;
+    padding-top: 90px;
+}
+
+#header_content_subtitle {
+    font-size: 2.7rem;
+    margin-top: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: relative;
+    z-index: 1;
+}
+
+#header_nav_logo {
+    width: 150px;
+}
+
+#header_nav_actions select {
+    border: none;
+    background-color: transparent;
+    color : #fff;
+    font-size: 1.6rem;
+}
+
+#header_nav_actions{
+    display: flex;
+}
+
+#header_nav_actions a {
+    background-color: #E50914;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 2px;
+    display: block;
+}
+
+.select_container{
+    border: 1px solid #fff;
+    padding: 8px 10px 8px 5px;
+    margin-right: 30px;
+    border-radius: 4px;
+}
+
+.select_container:before {
+    display: inline-block;
+        content: "";
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23000' class='bi bi-globe2' viewBox='0 0 16 16'><path d='M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z'/></svg>");
+        background-repeat: no-repeat;
+        height: 16px;
+        width: 16px;
+        background-color: #fff;
+        border-radius: 100%;
+        position: relative;
+        top: 2px;
+
+}
+        
+    
+
+/*
+  BODY
+*/
+
+body h2{
+    font-size: 4.7rem
+}
+
+body p, body li, body h3{
+    font-size: 2.4rem;
+}
+
+/*
+  BODY #1
+*/
+
+#benefits_container section {
+    display: flex;
+    border-top: 8px solid #222;
+    justify-content: center;
+    padding: 50px 0 50 0;
+}
+
+#benefits_container img{
+    max-width: 500px;
+}
+
+#benefits_container h2{
+    margin-bottom: 15px;
+}
+
+#benefits_container p{
+    margin: 0;
+}
+
+#benefits_container section div {
+    max-width : 550px;
+}
+
+#Netflix_on_tv {
+    padding: 50px 0 30px 0;
+
+}
+
+#Netflix_on_tv img {
+    max-width: 600px;
+}
+
+#series_without_connexion {
+    padding: 40px 0 0 0;
+}
+
+#series_without_connexion img {
+    margin-right: 100px;
+}
+
+#watch_Netflix_everywhere img {
+    max-width: 600px;
+}
+
+#watch_netflix {
+    padding: 100px 0 0 0;
+}
+
+#children {
+    padding: 100px 0 0 0
+}
+
+#Netflix_for_children img {
+    max-width: 600px;
+}
+
+/*
+  BODY #2 F.A.Q
+*/
+
+#faq_container {
+    border-top: 8px solid #222;
+}
+
+#faq_container h2{
+    text-align: center;
+}
+
+#faq_container h3 {
+    font-weight: normal;
+    margin: 0;
+}
+
+#small_container{
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#faq_container ul{
+    padding: 0;
+}
+
+#faq_container ul li{
+    background-color: #303030;
+    list-style: none;
+    margin-bottom : 8px;
+}
+
+.faq_header {
+    display: flex;
+    align-items: center;
+    padding: 19px 25px;
+    justify-content: space-between;
+    border-bottom: 5px solid black;
+}
+
+.faq_body {
+    padding: 19px 25px;
+    padding-top: 15px;
+}
+
+.faq_body p {
+    margin-top: 0;
+    margin-bottom: 30px;
+    line-height: 140%;
+}
+
+#faq_container form {
+    margin-top: 60px;
+}
+
+#faq_container .form_header_title{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/*
+  FOOTER
+*/
+
+footer {
+    padding: 80px 200px 30px 200px;
+    border-top: 8px solid #222;
+    margin-top: 80px;
+}
+
+footer a, footer p{
+    color: #757575;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer p{
+    font-size: 1.3rem;
+}
+
+#footer_contact_link{
+    display: block
+    margin-bottom 20px;
+}
+
+#footer_links_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer_links_container ul{
+    padding: 0;
+}
+
+#footer_links_container li{
+    list-style: none;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+footer select {
+    border: none;
+    background-color: transparent;
+    color : #757575;
+    font-size: 1.6rem;
+}
+#footer_nav_actions {
+    display: flex;
+}

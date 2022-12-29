@@ -1,0 +1,112 @@
+@media screen and (max-width: 800px) {
+
+    nav {
+        padding: 0 10px;
+    }
+        
+    #header_nav_logo {
+        width: 90px;
+    }
+
+    #header_content {
+        margin: auto;
+        margin-bottom: -70px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #header_content h1, #benefits_container h2, #body h2{
+        font-size: 2.2rem;
+    }
+    
+    #header_content_subtitle,
+    .form_header, .form_header_title,
+    #body p,
+    #body li,
+    #body h3 {
+        font-size: 1.8rem;
+    }
+
+    .select_container {
+        margin-right: 10px;
+        position: relative;
+        padding-left: 20px;
+    }
+
+    form {
+        text-align: center;
+    }
+
+    .form_body {
+        flex-direction: column;
+    }
+
+    .form_body input{
+        max-width: 100;
+        border-radius: 2px;
+        margin-bottom: 20px;
+    }
+
+    .form_body button {
+        height: 45px;
+        width: auto;
+        padding: 0 20px;
+        border-radius: 2px;
+        font-size: 2rem;
+    }
+
+    #benefits_container section {
+        flex-direction: column;
+        padding: 50px 20px 30px 20px;
+        text-align: center;
+    }
+        
+    #benefits_container section div {
+        width: 100%;
+    }
+        
+    #benefits_container img {
+        max-width: 100%;
+    }
+
+    #benefits_container #netflix_series_section, #benefits_container #netflix_children_section {
+        flex-direction: column-reverse;
+    }
+
+    #netflix_no_limit_section h2, #netflix_children_section h2 {
+        margin-top: 20px;
+    }
+
+    .fan_option_body{
+        display: none;
+    }
+
+    footer {
+        padding: 50px 20px  ;
+    }
+
+    #footer_links_container{
+        flex-wrap: wrap ;
+        margin-bottom: 40px;
+        margin-top; 20px;
+    }
+
+    #footer_contact_link {
+        margin-bottom: 40px;
+    }
+
+    #footer_links_container ul {
+        margin-top: 15px ;
+    }
+
+    footer .select_container {
+        padding: 10px 5px 14px 6px;
+    }
+
+    footer .select_container::before {
+        top: auto;
+        left: 0;
+    }
+    
+}
+
